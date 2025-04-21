@@ -7,7 +7,7 @@ export const disableRightClick = () => {
 
   // Also disable other ways to access context menu
   document.addEventListener('keydown', (e) => {
-     Disable F12 key
+     //Disable F12 key
     if (e.key === 'F12') {
       e.preventDefault();
      return false;
