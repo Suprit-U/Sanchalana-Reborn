@@ -7,11 +7,11 @@ export const disableRightClick = () => {
 
   // Also disable other ways to access context menu
   document.addEventListener('keydown', (e) => {
-    // Disable F12 key
-    //if (e.key === 'F12') {
-    //  e.preventDefault();
-    //  return false;
-   // }
+     Disable F12 key
+    if (e.key === 'F12') {
+      e.preventDefault();
+     return false;
+    }
     
     // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (Chrome DevTools)
     if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) {
