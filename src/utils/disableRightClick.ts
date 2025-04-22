@@ -1,33 +1,26 @@
-
 export const disableRightClick = () => {
+  // Disable right-click context menu
   document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
     return false;
   });
 
-  // Also disable other ways to access context menu
+  // Disable keyboard shortcuts for developer tools and view source
   document.addEventListener('keydown', (e) => {
-<<<<<<< HEAD
     // Disable F12 key
     if (e.key === 'F12') {
       e.preventDefault();
       return false;
-=======
-     //Disable F12 key
-    if (e.key === 'F12') {
-      e.preventDefault();
-     return false;
->>>>>>> origin/main
     }
-    
+
     // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (Chrome DevTools)
-    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) {
+    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) {
       e.preventDefault();
       return false;
     }
-    
+
     // Disable Ctrl+U (View Source)
-    if (e.ctrlKey && e.key === 'u') {
+    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
       e.preventDefault();
       return false;
     }
