@@ -12,7 +12,8 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const contactCoordinators = [
   { name: "Suprit U", phone: "9480065765", role: "Website Coordinator" },
-  { name: "Risheek R", phone: "8792092680", role: "Website Coordinator" }
+  { name: "Risheek R", phone: "8792092680", role: "Website Coordinator" },
+  { name: "Kushaal A Kumar", phone: "9741882168", role: "Website Coordinator" }
 ];
 
 export function Navbar() {
