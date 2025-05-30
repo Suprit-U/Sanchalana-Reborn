@@ -49,24 +49,3 @@ This project is built using:
 * ⚛️ **React** – Component-based UI library
 * 🎨 **Tailwind CSS** – Utility-first CSS framework
 * 🧱 **shadcn/ui** – Beautifully designed UI components
-
-## 🌐 Deployment
-
-You can deploy this project using any modern static hosting platform such as:
-
-* **Vercel**
-* **Netlify**
-* **GitHub Pages**
-
-To deploy, run a production build:
-npm run build
-
-Then, upload the contents of the `dist/` folder to your preferred hosting service.
-
-## 🌍 Custom Domain
-
-If you're hosting this site externally and want a custom domain:
-
-1. Purchase a domain via a domain provider.
-2. Configure DNS to point to your hosting provider.
-3. Connect the domain through your hosting provider's dashboard.
